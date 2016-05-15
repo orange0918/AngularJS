@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+-----Example 1-----
+<br/>
+{{ 9999 }}
+<br>
+{{ 9999+1 }}
+<br>
+{{ 9*9 }}
+<br>
+{{ 'Hello World' }}
+<br/><br/>
+-----Example 2-----
+<br/>
+{{ 9999 | number }}
+<br>
+{{ 9999+1 | number:2 }}
+<br>
+{{ 9*9 | currency }}
+<br>
+{{ 'Hello World' | uppercase }}
+  <br/><br/>
+  -----Example 3-----
+  <br/>
+  兩個 input 欄位都被 ng-model 屬性宣告成了 Model，<br/>
+  屬性值中設定的是 Model 的變數名稱(quantity, price)
+  <br/><br/>
+  數量: <input type="number" ng-model="quantity" ng-init="quantity = 1">
+<br>
+單價: <input type="number" ng-model="price" ng-init="price = 299">
+<br>
+總價: {{ quantity * price }}
+
+
+</body>
+</html>
